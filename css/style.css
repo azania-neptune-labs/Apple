@@ -745,12 +745,38 @@ footer .flag a:hover{
 		text-align: center;
 		margin-bottom: 10px;
 	}
+	.mobile-menu{
+		display: inline-flex;
+		width: 100%;
+		font-size: 25px;
+		color: white;
+		background: #1eb858;
+		padding: 10px;
+	}
+	.bars{
+		width: 50%;
+	}
+	.user-login{
+		/*float: right;*/
+		width: /*40%*/ /*45%*/ 148px !important;
+		/*text-align: right;*/
+		display: inline-flex;
+		margin-left: auto;
+	}
+	.user-login p{
+		/*float: right;*/
+		width: /*65%*/ /*75%*/ 105px;
+		/*text-align: right;*/
+		font-size: 15px;
+		margin: auto;
+	}
 	.menu{
 		display: none !important;
 	}
 	.search-area{
-		width: 100% !important;
-		text-align: center !important;
+		/*width: 100% !important;
+		text-align: center !important;*/
+		display: none;
 	}
 	.form{
 		width: 100% !important;
@@ -941,6 +967,9 @@ footer .flag a:hover{
 
 
 @media (min-width: 600px) {
+	header{
+		padding: 0;
+	}
 	.container{
 		width: 100%;
 	}
@@ -949,13 +978,46 @@ footer .flag a:hover{
 		text-align: center;
 		margin-bottom: 10px;
 	}
-	.menu{
+	.logo-area{
 		width: 100% !important;
-		text-align: center !important;
+		text-align: center;
+		margin-bottom: 10px;
+		padding: 20px 0 10px;
+	}
+	.mobile-menu{
+		display: inline-flex;
+		width: 100%;
+		font-size: 25px;
+		color: white;
+		background: #1eb858;
+		padding: 10px;
+	}
+	.bars{
+		width: 50%;
+	}
+	.user-login{
+		/*float: right;*/
+		width: /*40%*/ 25% !important;
+		/*text-align: right;*/
+		display: inline-flex;
+		margin-left: auto;
+	}
+	.user-login p{
+		/*float: right;
+		width: 65%;
+		text-align: right;*/
+		font-size: 15px;
+		margin: auto;
+	}
+	.menu{
+		/*width: 100% !important;
+		text-align: center !important;*/
+		display: none !important;
 	}
 	.search-area{
-		width: 100% !important;
-		text-align: center !important;
+		/*width: 100% !important;
+		text-align: center !important;*/
+		display: none !important;
 	}
 	.form{
 		width: 100% !important;
@@ -1137,8 +1199,54 @@ footer .flag a:hover{
 	}
 }
 
+@media (max-width: /*760px*/ 799px) {
+	header{
+		padding: 0;
+	}
+	.container{
+		width: 100% !important;
+	}
+	.logo-area{
+		width: 100% !important;
+		text-align: center;
+		margin-bottom: 10px;
+		padding: 20px 0 10px;
+	}
+	.mobile-menu{
+		display: inline-flex;
+		width: 100%;
+		font-size: 25px;
+		color: white;
+		background: #1eb858;
+		padding: 10px;
+	}
+	.bars{
+		width: 50%;
+	}
+	.user-login{
+		/*float: right;*/
+		width: 40%;
+		/*text-align: right;*/
+		display: inline-flex;
+		margin-left: auto;
+	}
+	.user-login p{
+		/*float: right;
+		width: 65%;
+		text-align: right;*/
+		font-size: 15px;
+		margin: auto;
+	}
+	.menu{
+		display: none !important;
+	}
+	.search-area{
+		display: none !important;
+	}
+}
 
-@media (min-width: 800px) {
+
+@media (min-width: /*800px*/ /*760px*/ 799px) {
 	.container{
 		width: 100% !important;
 	}
@@ -1147,17 +1255,28 @@ footer .flag a:hover{
 		text-align: center;
 		margin-bottom: 10px;
 	}
+	.mobile-menu{
+		display: none;
+	}
 	.menu{
-		display: flex;
+		display: flex !important;
 		width: 53% !important;
 		text-align: center !important;
 		float: left;
 		margin-top: 10px;
+		/*display: none;*/
 	}
 	.search-area{
 		width: 47% !important;
 		text-align: center !important;
+		display: inline-block !important;
 	}
+	/*.search-area{
+		display: inline-block;
+		width: 34.48%;
+		text-align: right;
+		vertical-align: top;
+	}*/
 	.form{
 		width: 100% !important;
 	}
@@ -1165,6 +1284,9 @@ footer .flag a:hover{
 
 
 @media (min-width: 1050px) {
+	header{
+		padding: 20px !important;
+	}
 	.container{
 		width: 1000px !important;
 	}
@@ -1172,8 +1294,11 @@ footer .flag a:hover{
 		width: 14.6% !important;
 		display: inline-block;
 	}
+	.mobile-menu{
+		display: none;
+	}
 	.menu{
-		display: inline-block;
+		display: inline-block !important;
 		width: 49.5% !important;
 		text-align: center !important;
 		float: none;
@@ -1182,6 +1307,8 @@ footer .flag a:hover{
 	.search-area{
 		width: 34.5% !important;
 		text-align: center !important;
+		vertical-align: middle !important;
+		margin-bottom: 20px;
 	}
 	.form{
 		width: 100% !important;
